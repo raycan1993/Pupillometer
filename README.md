@@ -10,13 +10,13 @@ Die vorliegende Bachelor-Thesis befasst sich mit einer der markantesten Symptome
 </p>
 <img src="https://github.com/raycan1993/Pupillometer/blob/master/Screenshots/1.png" alt="Hauptansicht und Anleitung" width="500"/>
 
-### Detail- und Ergebnisansicht
+### Ergebnis- und Detailansicht 
+<p>
+  <b>Ergebnisansicht: </b> Nach einer Messung werden die Ergebnisse hier angezeigt. Der Benutzer hat die Möglichkeit die Messung zu speichern oder zu verwerfen.
+</p>
 <p>
   <b>Detailansicht: </b>Sobald der Nutzer auf einer Messung aus der ListView klickt, erscheint die Detailansicht mit den
   entsprechenden Informationen der Messung
-</p>
-<p>
-  <b>Hauptansicht: </b> Nach einer Messung werden die Ergebnisse hier angezeigt. Der Benutzer hat die Möglichkeit die Messung zu speichern oder zu verwerfen.
 </p>
 <img src="https://github.com/raycan1993/Pupillometer/blob/master/Screenshots/2.png" alt="Detail- und Ergebnisansicht" width="500"/>
 
