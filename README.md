@@ -6,7 +6,7 @@ Die vorliegende Bachelor-Thesis befasst sich mit einer der markantesten Symptome
   <b>Hauptansicht: </b> Hier kann man eine Pupillenmessung durchführen basierend auf die Irisfarbe des Benutzers. Ebenfalls ersichtlich sind alle gespeicherten Messungen. 
 </p>
 <p>
-  <b>Anleitung: </b> Die korrekte Nutzung der Applikation wird hier in kurz erklärt.
+  <b>Anleitung: </b> Die korrekte Nutzung der Applikation wird hier in vier Schritten kurz erklärt.
 </p>
 <img src="https://github.com/raycan1993/Pupillometer/blob/master/Screenshots/1.png" alt="Hauptansicht und Anleitung" width="500"/>
 
