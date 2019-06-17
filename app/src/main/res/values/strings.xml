@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pupillometer</string>
+    <string name="instructions">Anleitung</string>
+
+    <string-array name="eye_color_array">
+        <item>Blau, Grau, Grün</item>
+        <item>Braun</item>
+        <item>Dunkelbraun</item>
+        <item>Hellbraun</item>
+    </string-array>
+
+</resources>

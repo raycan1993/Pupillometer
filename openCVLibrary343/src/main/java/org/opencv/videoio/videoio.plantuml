@@ -1,0 +1,783 @@
+@startuml
+
+title __VIDEOIO's Class Diagram__\n
+
+  package org.opencv {
+    package org.opencv.video {
+      package org.opencv.videoio {
+        class VideoCapture {
+            # nativeObj : long
+            # VideoCapture()
+            + getNativeObjAddr()
+            {static} + __fromPtr__()
+            + VideoCapture()
+            + VideoCapture()
+            + VideoCapture()
+            + VideoCapture()
+            + grab()
+            + isOpened()
+            + open()
+            + open()
+            + open()
+            + open()
+            + read()
+            + retrieve()
+            + retrieve()
+            + set()
+            + get()
+            + release()
+            # finalize()
+            {static} - VideoCapture_0()
+            {static} - VideoCapture_1()
+            {static} - VideoCapture_2()
+            {static} - VideoCapture_3()
+            {static} - grab_0()
+            {static} - isOpened_0()
+            {static} - open_0()
+            {static} - open_1()
+            {static} - open_2()
+            {static} - open_3()
+            {static} - read_0()
+            {static} - retrieve_0()
+            {static} - retrieve_1()
+            {static} - set_0()
+            {static} - get_0()
+            {static} - release_0()
+            {static} - delete()
+        }
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.video {
+      package org.opencv.videoio {
+        class VideoWriter {
+            # nativeObj : long
+            # VideoWriter()
+            + getNativeObjAddr()
+            {static} + __fromPtr__()
+            + VideoWriter()
+            + VideoWriter()
+            + VideoWriter()
+            + VideoWriter()
+            + VideoWriter()
+            + isOpened()
+            + open()
+            + open()
+            + open()
+            + open()
+            + set()
+            + get()
+            {static} + fourcc()
+            + release()
+            + write()
+            # finalize()
+            {static} - VideoWriter_0()
+            {static} - VideoWriter_1()
+            {static} - VideoWriter_2()
+            {static} - VideoWriter_3()
+            {static} - VideoWriter_4()
+            {static} - isOpened_0()
+            {static} - open_0()
+            {static} - open_1()
+            {static} - open_2()
+            {static} - open_3()
+            {static} - set_0()
+            {static} - get_0()
+            {static} - fourcc_0()
+            {static} - release_0()
+            {static} - write_0()
+            {static} - delete()
+        }
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.video {
+      package org.opencv.videoio {
+        class Videoio {
+            {static} + CV_CAP_ANY : int
+            {static} + CV_CAP_MIL : int
+            {static} + CV_CAP_VFW : int
+            {static} + CV_CAP_V4L : int
+            {static} + CV_CAP_V4L2 : int
+            {static} + CV_CAP_FIREWARE : int
+            {static} + CV_CAP_FIREWIRE : int
+            {static} + CV_CAP_IEEE1394 : int
+            {static} + CV_CAP_DC1394 : int
+            {static} + CV_CAP_CMU1394 : int
+            {static} + CV_CAP_STEREO : int
+            {static} + CV_CAP_TYZX : int
+            {static} + CV_TYZX_LEFT : int
+            {static} + CV_TYZX_RIGHT : int
+            {static} + CV_TYZX_COLOR : int
+            {static} + CV_TYZX_Z : int
+            {static} + CV_CAP_QT : int
+            {static} + CV_CAP_UNICAP : int
+            {static} + CV_CAP_DSHOW : int
+            {static} + CV_CAP_MSMF : int
+            {static} + CV_CAP_PVAPI : int
+            {static} + CV_CAP_OPENNI : int
+            {static} + CV_CAP_OPENNI_ASUS : int
+            {static} + CV_CAP_ANDROID : int
+            {static} + CV_CAP_ANDROID_BACK : int
+            {static} + CV_CAP_ANDROID_FRONT : int
+            {static} + CV_CAP_XIAPI : int
+            {static} + CV_CAP_AVFOUNDATION : int
+            {static} + CV_CAP_GIGANETIX : int
+            {static} + CV_CAP_INTELPERC : int
+            {static} + CV_CAP_OPENNI2 : int
+            {static} + CV_CAP_GPHOTO2 : int
+            {static} + CV_CAP_GSTREAMER : int
+            {static} + CV_CAP_FFMPEG : int
+            {static} + CV_CAP_IMAGES : int
+            {static} + CV_CAP_ARAVIS : int
+            {static} + CV_CAP_PROP_DC1394_OFF : int
+            {static} + CV_CAP_PROP_DC1394_MODE_MANUAL : int
+            {static} + CV_CAP_PROP_DC1394_MODE_AUTO : int
+            {static} + CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO : int
+            {static} + CV_CAP_PROP_POS_MSEC : int
+            {static} + CV_CAP_PROP_POS_FRAMES : int
+            {static} + CV_CAP_PROP_POS_AVI_RATIO : int
+            {static} + CV_CAP_PROP_FRAME_WIDTH : int
+            {static} + CV_CAP_PROP_FRAME_HEIGHT : int
+            {static} + CV_CAP_PROP_FPS : int
+            {static} + CV_CAP_PROP_FOURCC : int
+            {static} + CV_CAP_PROP_FRAME_COUNT : int
+            {static} + CV_CAP_PROP_FORMAT : int
+            {static} + CV_CAP_PROP_MODE : int
+            {static} + CV_CAP_PROP_BRIGHTNESS : int
+            {static} + CV_CAP_PROP_CONTRAST : int
+            {static} + CV_CAP_PROP_SATURATION : int
+            {static} + CV_CAP_PROP_HUE : int
+            {static} + CV_CAP_PROP_GAIN : int
+            {static} + CV_CAP_PROP_EXPOSURE : int
+            {static} + CV_CAP_PROP_CONVERT_RGB : int
+            {static} + CV_CAP_PROP_WHITE_BALANCE_BLUE_U : int
+            {static} + CV_CAP_PROP_RECTIFICATION : int
+            {static} + CV_CAP_PROP_MONOCHROME : int
+            {static} + CV_CAP_PROP_SHARPNESS : int
+            {static} + CV_CAP_PROP_AUTO_EXPOSURE : int
+            {static} + CV_CAP_PROP_GAMMA : int
+            {static} + CV_CAP_PROP_TEMPERATURE : int
+            {static} + CV_CAP_PROP_TRIGGER : int
+            {static} + CV_CAP_PROP_TRIGGER_DELAY : int
+            {static} + CV_CAP_PROP_WHITE_BALANCE_RED_V : int
+            {static} + CV_CAP_PROP_ZOOM : int
+            {static} + CV_CAP_PROP_FOCUS : int
+            {static} + CV_CAP_PROP_GUID : int
+            {static} + CV_CAP_PROP_ISO_SPEED : int
+            {static} + CV_CAP_PROP_MAX_DC1394 : int
+            {static} + CV_CAP_PROP_BACKLIGHT : int
+            {static} + CV_CAP_PROP_PAN : int
+            {static} + CV_CAP_PROP_TILT : int
+            {static} + CV_CAP_PROP_ROLL : int
+            {static} + CV_CAP_PROP_IRIS : int
+            {static} + CV_CAP_PROP_SETTINGS : int
+            {static} + CV_CAP_PROP_BUFFERSIZE : int
+            {static} + CV_CAP_PROP_AUTOFOCUS : int
+            {static} + CV_CAP_PROP_SAR_NUM : int
+            {static} + CV_CAP_PROP_SAR_DEN : int
+            {static} + CV_CAP_PROP_AUTOGRAB : int
+            {static} + CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING : int
+            {static} + CV_CAP_PROP_PREVIEW_FORMAT : int
+            {static} + CV_CAP_OPENNI_DEPTH_GENERATOR : int
+            {static} + CV_CAP_OPENNI_IMAGE_GENERATOR : int
+            {static} + CV_CAP_OPENNI_IR_GENERATOR : int
+            {static} + CV_CAP_OPENNI_GENERATORS_MASK : int
+            {static} + CV_CAP_PROP_OPENNI_OUTPUT_MODE : int
+            {static} + CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH : int
+            {static} + CV_CAP_PROP_OPENNI_BASELINE : int
+            {static} + CV_CAP_PROP_OPENNI_FOCAL_LENGTH : int
+            {static} + CV_CAP_PROP_OPENNI_REGISTRATION : int
+            {static} + CV_CAP_PROP_OPENNI_REGISTRATION_ON : int
+            {static} + CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC : int
+            {static} + CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE : int
+            {static} + CV_CAP_PROP_OPENNI_CIRCLE_BUFFER : int
+            {static} + CV_CAP_PROP_OPENNI_MAX_TIME_DURATION : int
+            {static} + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT : int
+            {static} + CV_CAP_PROP_OPENNI2_SYNC : int
+            {static} + CV_CAP_PROP_OPENNI2_MIRROR : int
+            {static} + CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT : int
+            {static} + CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE : int
+            {static} + CV_CAP_OPENNI_DEPTH_GENERATOR_PRESENT : int
+            {static} + CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE : int
+            {static} + CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH : int
+            {static} + CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION : int
+            {static} + CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON : int
+            {static} + CV_CAP_OPENNI_IR_GENERATOR_PRESENT : int
+            {static} + CV_CAP_GSTREAMER_QUEUE_LENGTH : int
+            {static} + CV_CAP_PROP_PVAPI_MULTICASTIP : int
+            {static} + CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE : int
+            {static} + CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL : int
+            {static} + CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL : int
+            {static} + CV_CAP_PROP_PVAPI_BINNINGX : int
+            {static} + CV_CAP_PROP_PVAPI_BINNINGY : int
+            {static} + CV_CAP_PROP_PVAPI_PIXELFORMAT : int
+            {static} + CV_CAP_PROP_XI_DOWNSAMPLING : int
+            {static} + CV_CAP_PROP_XI_DATA_FORMAT : int
+            {static} + CV_CAP_PROP_XI_OFFSET_X : int
+            {static} + CV_CAP_PROP_XI_OFFSET_Y : int
+            {static} + CV_CAP_PROP_XI_TRG_SOURCE : int
+            {static} + CV_CAP_PROP_XI_TRG_SOFTWARE : int
+            {static} + CV_CAP_PROP_XI_GPI_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_GPI_MODE : int
+            {static} + CV_CAP_PROP_XI_GPI_LEVEL : int
+            {static} + CV_CAP_PROP_XI_GPO_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_GPO_MODE : int
+            {static} + CV_CAP_PROP_XI_LED_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_LED_MODE : int
+            {static} + CV_CAP_PROP_XI_MANUAL_WB : int
+            {static} + CV_CAP_PROP_XI_AUTO_WB : int
+            {static} + CV_CAP_PROP_XI_AEAG : int
+            {static} + CV_CAP_PROP_XI_EXP_PRIORITY : int
+            {static} + CV_CAP_PROP_XI_AE_MAX_LIMIT : int
+            {static} + CV_CAP_PROP_XI_AG_MAX_LIMIT : int
+            {static} + CV_CAP_PROP_XI_AEAG_LEVEL : int
+            {static} + CV_CAP_PROP_XI_TIMEOUT : int
+            {static} + CV_CAP_PROP_XI_EXPOSURE : int
+            {static} + CV_CAP_PROP_XI_EXPOSURE_BURST_COUNT : int
+            {static} + CV_CAP_PROP_XI_GAIN_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_GAIN : int
+            {static} + CV_CAP_PROP_XI_DOWNSAMPLING_TYPE : int
+            {static} + CV_CAP_PROP_XI_BINNING_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_BINNING_VERTICAL : int
+            {static} + CV_CAP_PROP_XI_BINNING_HORIZONTAL : int
+            {static} + CV_CAP_PROP_XI_BINNING_PATTERN : int
+            {static} + CV_CAP_PROP_XI_DECIMATION_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_DECIMATION_VERTICAL : int
+            {static} + CV_CAP_PROP_XI_DECIMATION_HORIZONTAL : int
+            {static} + CV_CAP_PROP_XI_DECIMATION_PATTERN : int
+            {static} + CV_CAP_PROP_XI_TEST_PATTERN_GENERATOR_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_TEST_PATTERN : int
+            {static} + CV_CAP_PROP_XI_IMAGE_DATA_FORMAT : int
+            {static} + CV_CAP_PROP_XI_SHUTTER_TYPE : int
+            {static} + CV_CAP_PROP_XI_SENSOR_TAPS : int
+            {static} + CV_CAP_PROP_XI_AEAG_ROI_OFFSET_X : int
+            {static} + CV_CAP_PROP_XI_AEAG_ROI_OFFSET_Y : int
+            {static} + CV_CAP_PROP_XI_AEAG_ROI_WIDTH : int
+            {static} + CV_CAP_PROP_XI_AEAG_ROI_HEIGHT : int
+            {static} + CV_CAP_PROP_XI_BPC : int
+            {static} + CV_CAP_PROP_XI_WB_KR : int
+            {static} + CV_CAP_PROP_XI_WB_KG : int
+            {static} + CV_CAP_PROP_XI_WB_KB : int
+            {static} + CV_CAP_PROP_XI_WIDTH : int
+            {static} + CV_CAP_PROP_XI_HEIGHT : int
+            {static} + CV_CAP_PROP_XI_REGION_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_REGION_MODE : int
+            {static} + CV_CAP_PROP_XI_LIMIT_BANDWIDTH : int
+            {static} + CV_CAP_PROP_XI_SENSOR_DATA_BIT_DEPTH : int
+            {static} + CV_CAP_PROP_XI_OUTPUT_DATA_BIT_DEPTH : int
+            {static} + CV_CAP_PROP_XI_IMAGE_DATA_BIT_DEPTH : int
+            {static} + CV_CAP_PROP_XI_OUTPUT_DATA_PACKING : int
+            {static} + CV_CAP_PROP_XI_OUTPUT_DATA_PACKING_TYPE : int
+            {static} + CV_CAP_PROP_XI_IS_COOLED : int
+            {static} + CV_CAP_PROP_XI_COOLING : int
+            {static} + CV_CAP_PROP_XI_TARGET_TEMP : int
+            {static} + CV_CAP_PROP_XI_CHIP_TEMP : int
+            {static} + CV_CAP_PROP_XI_HOUS_TEMP : int
+            {static} + CV_CAP_PROP_XI_HOUS_BACK_SIDE_TEMP : int
+            {static} + CV_CAP_PROP_XI_SENSOR_BOARD_TEMP : int
+            {static} + CV_CAP_PROP_XI_CMS : int
+            {static} + CV_CAP_PROP_XI_APPLY_CMS : int
+            {static} + CV_CAP_PROP_XI_IMAGE_IS_COLOR : int
+            {static} + CV_CAP_PROP_XI_COLOR_FILTER_ARRAY : int
+            {static} + CV_CAP_PROP_XI_GAMMAY : int
+            {static} + CV_CAP_PROP_XI_GAMMAC : int
+            {static} + CV_CAP_PROP_XI_SHARPNESS : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_00 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_01 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_02 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_03 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_10 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_11 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_12 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_13 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_20 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_21 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_22 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_23 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_30 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_31 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_32 : int
+            {static} + CV_CAP_PROP_XI_CC_MATRIX_33 : int
+            {static} + CV_CAP_PROP_XI_DEFAULT_CC_MATRIX : int
+            {static} + CV_CAP_PROP_XI_TRG_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_ACQ_FRAME_BURST_COUNT : int
+            {static} + CV_CAP_PROP_XI_DEBOUNCE_EN : int
+            {static} + CV_CAP_PROP_XI_DEBOUNCE_T0 : int
+            {static} + CV_CAP_PROP_XI_DEBOUNCE_T1 : int
+            {static} + CV_CAP_PROP_XI_DEBOUNCE_POL : int
+            {static} + CV_CAP_PROP_XI_LENS_MODE : int
+            {static} + CV_CAP_PROP_XI_LENS_APERTURE_VALUE : int
+            {static} + CV_CAP_PROP_XI_LENS_FOCUS_MOVEMENT_VALUE : int
+            {static} + CV_CAP_PROP_XI_LENS_FOCUS_MOVE : int
+            {static} + CV_CAP_PROP_XI_LENS_FOCUS_DISTANCE : int
+            {static} + CV_CAP_PROP_XI_LENS_FOCAL_LENGTH : int
+            {static} + CV_CAP_PROP_XI_LENS_FEATURE_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_LENS_FEATURE : int
+            {static} + CV_CAP_PROP_XI_DEVICE_MODEL_ID : int
+            {static} + CV_CAP_PROP_XI_DEVICE_SN : int
+            {static} + CV_CAP_PROP_XI_IMAGE_DATA_FORMAT_RGB32_ALPHA : int
+            {static} + CV_CAP_PROP_XI_IMAGE_PAYLOAD_SIZE : int
+            {static} + CV_CAP_PROP_XI_TRANSPORT_PIXEL_FORMAT : int
+            {static} + CV_CAP_PROP_XI_SENSOR_CLOCK_FREQ_HZ : int
+            {static} + CV_CAP_PROP_XI_SENSOR_CLOCK_FREQ_INDEX : int
+            {static} + CV_CAP_PROP_XI_SENSOR_OUTPUT_CHANNEL_COUNT : int
+            {static} + CV_CAP_PROP_XI_FRAMERATE : int
+            {static} + CV_CAP_PROP_XI_COUNTER_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_COUNTER_VALUE : int
+            {static} + CV_CAP_PROP_XI_ACQ_TIMING_MODE : int
+            {static} + CV_CAP_PROP_XI_AVAILABLE_BANDWIDTH : int
+            {static} + CV_CAP_PROP_XI_BUFFER_POLICY : int
+            {static} + CV_CAP_PROP_XI_LUT_EN : int
+            {static} + CV_CAP_PROP_XI_LUT_INDEX : int
+            {static} + CV_CAP_PROP_XI_LUT_VALUE : int
+            {static} + CV_CAP_PROP_XI_TRG_DELAY : int
+            {static} + CV_CAP_PROP_XI_TS_RST_MODE : int
+            {static} + CV_CAP_PROP_XI_TS_RST_SOURCE : int
+            {static} + CV_CAP_PROP_XI_IS_DEVICE_EXIST : int
+            {static} + CV_CAP_PROP_XI_ACQ_BUFFER_SIZE : int
+            {static} + CV_CAP_PROP_XI_ACQ_BUFFER_SIZE_UNIT : int
+            {static} + CV_CAP_PROP_XI_ACQ_TRANSPORT_BUFFER_SIZE : int
+            {static} + CV_CAP_PROP_XI_BUFFERS_QUEUE_SIZE : int
+            {static} + CV_CAP_PROP_XI_ACQ_TRANSPORT_BUFFER_COMMIT : int
+            {static} + CV_CAP_PROP_XI_RECENT_FRAME : int
+            {static} + CV_CAP_PROP_XI_DEVICE_RESET : int
+            {static} + CV_CAP_PROP_XI_COLUMN_FPN_CORRECTION : int
+            {static} + CV_CAP_PROP_XI_ROW_FPN_CORRECTION : int
+            {static} + CV_CAP_PROP_XI_SENSOR_MODE : int
+            {static} + CV_CAP_PROP_XI_HDR : int
+            {static} + CV_CAP_PROP_XI_HDR_KNEEPOINT_COUNT : int
+            {static} + CV_CAP_PROP_XI_HDR_T1 : int
+            {static} + CV_CAP_PROP_XI_HDR_T2 : int
+            {static} + CV_CAP_PROP_XI_KNEEPOINT1 : int
+            {static} + CV_CAP_PROP_XI_KNEEPOINT2 : int
+            {static} + CV_CAP_PROP_XI_IMAGE_BLACK_LEVEL : int
+            {static} + CV_CAP_PROP_XI_HW_REVISION : int
+            {static} + CV_CAP_PROP_XI_DEBUG_LEVEL : int
+            {static} + CV_CAP_PROP_XI_AUTO_BANDWIDTH_CALCULATION : int
+            {static} + CV_CAP_PROP_XI_FFS_FILE_ID : int
+            {static} + CV_CAP_PROP_XI_FFS_FILE_SIZE : int
+            {static} + CV_CAP_PROP_XI_FREE_FFS_SIZE : int
+            {static} + CV_CAP_PROP_XI_USED_FFS_SIZE : int
+            {static} + CV_CAP_PROP_XI_FFS_ACCESS_KEY : int
+            {static} + CV_CAP_PROP_XI_SENSOR_FEATURE_SELECTOR : int
+            {static} + CV_CAP_PROP_XI_SENSOR_FEATURE_VALUE : int
+            {static} + CV_CAP_PROP_ANDROID_FLASH_MODE : int
+            {static} + CV_CAP_PROP_ANDROID_FOCUS_MODE : int
+            {static} + CV_CAP_PROP_ANDROID_WHITE_BALANCE : int
+            {static} + CV_CAP_PROP_ANDROID_ANTIBANDING : int
+            {static} + CV_CAP_PROP_ANDROID_FOCAL_LENGTH : int
+            {static} + CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR : int
+            {static} + CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL : int
+            {static} + CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR : int
+            {static} + CV_CAP_PROP_ANDROID_EXPOSE_LOCK : int
+            {static} + CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK : int
+            {static} + CV_CAP_PROP_IOS_DEVICE_FOCUS : int
+            {static} + CV_CAP_PROP_IOS_DEVICE_EXPOSURE : int
+            {static} + CV_CAP_PROP_IOS_DEVICE_FLASH : int
+            {static} + CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE : int
+            {static} + CV_CAP_PROP_IOS_DEVICE_TORCH : int
+            {static} + CV_CAP_PROP_GIGA_FRAME_OFFSET_X : int
+            {static} + CV_CAP_PROP_GIGA_FRAME_OFFSET_Y : int
+            {static} + CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX : int
+            {static} + CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX : int
+            {static} + CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH : int
+            {static} + CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH : int
+            {static} + CV_CAP_PROP_INTELPERC_PROFILE_COUNT : int
+            {static} + CV_CAP_PROP_INTELPERC_PROFILE_IDX : int
+            {static} + CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE : int
+            {static} + CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE : int
+            {static} + CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD : int
+            {static} + CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ : int
+            {static} + CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT : int
+            {static} + CV_CAP_INTELPERC_DEPTH_GENERATOR : int
+            {static} + CV_CAP_INTELPERC_IMAGE_GENERATOR : int
+            {static} + CV_CAP_INTELPERC_GENERATORS_MASK : int
+            {static} + CV_CAP_MODE_BGR : int
+            {static} + CV_CAP_MODE_RGB : int
+            {static} + CV_CAP_MODE_GRAY : int
+            {static} + CV_CAP_MODE_YUYV : int
+            {static} + CV_CAP_OPENNI_DEPTH_MAP : int
+            {static} + CV_CAP_OPENNI_POINT_CLOUD_MAP : int
+            {static} + CV_CAP_OPENNI_DISPARITY_MAP : int
+            {static} + CV_CAP_OPENNI_DISPARITY_MAP_32F : int
+            {static} + CV_CAP_OPENNI_VALID_DEPTH_MASK : int
+            {static} + CV_CAP_OPENNI_BGR_IMAGE : int
+            {static} + CV_CAP_OPENNI_GRAY_IMAGE : int
+            {static} + CV_CAP_OPENNI_IR_IMAGE : int
+            {static} + CV_CAP_OPENNI_VGA_30HZ : int
+            {static} + CV_CAP_OPENNI_SXGA_15HZ : int
+            {static} + CV_CAP_OPENNI_SXGA_30HZ : int
+            {static} + CV_CAP_OPENNI_QVGA_30HZ : int
+            {static} + CV_CAP_OPENNI_QVGA_60HZ : int
+            {static} + CV_CAP_INTELPERC_DEPTH_MAP : int
+            {static} + CV_CAP_INTELPERC_UVDEPTH_MAP : int
+            {static} + CV_CAP_INTELPERC_IR_MAP : int
+            {static} + CV_CAP_INTELPERC_IMAGE : int
+            {static} + CV_CAP_PROP_GPHOTO2_PREVIEW : int
+            {static} + CV_CAP_PROP_GPHOTO2_WIDGET_ENUMERATE : int
+            {static} + CV_CAP_PROP_GPHOTO2_RELOAD_CONFIG : int
+            {static} + CV_CAP_PROP_GPHOTO2_RELOAD_ON_CHANGE : int
+            {static} + CV_CAP_PROP_GPHOTO2_COLLECT_MSGS : int
+            {static} + CV_CAP_PROP_GPHOTO2_FLUSH_MSGS : int
+            {static} + CV_CAP_PROP_SPEED : int
+            {static} + CV_CAP_PROP_APERTURE : int
+            {static} + CV_CAP_PROP_EXPOSUREPROGRAM : int
+            {static} + CV_CAP_PROP_VIEWFINDER : int
+            {static} + CAP_ANY : int
+            {static} + CAP_VFW : int
+            {static} + CAP_V4L : int
+            {static} + CAP_V4L2 : int
+            {static} + CAP_FIREWIRE : int
+            {static} + CAP_FIREWARE : int
+            {static} + CAP_IEEE1394 : int
+            {static} + CAP_DC1394 : int
+            {static} + CAP_CMU1394 : int
+            {static} + CAP_QT : int
+            {static} + CAP_UNICAP : int
+            {static} + CAP_DSHOW : int
+            {static} + CAP_PVAPI : int
+            {static} + CAP_OPENNI : int
+            {static} + CAP_OPENNI_ASUS : int
+            {static} + CAP_ANDROID : int
+            {static} + CAP_XIAPI : int
+            {static} + CAP_AVFOUNDATION : int
+            {static} + CAP_GIGANETIX : int
+            {static} + CAP_MSMF : int
+            {static} + CAP_WINRT : int
+            {static} + CAP_INTELPERC : int
+            {static} + CAP_OPENNI2 : int
+            {static} + CAP_OPENNI2_ASUS : int
+            {static} + CAP_GPHOTO2 : int
+            {static} + CAP_GSTREAMER : int
+            {static} + CAP_FFMPEG : int
+            {static} + CAP_IMAGES : int
+            {static} + CAP_ARAVIS : int
+            {static} + CAP_OPENCV_MJPEG : int
+            {static} + CAP_INTEL_MFX : int
+            {static} + CAP_XINE : int
+            {static} + CAP_PROP_POS_MSEC : int
+            {static} + CAP_PROP_POS_FRAMES : int
+            {static} + CAP_PROP_POS_AVI_RATIO : int
+            {static} + CAP_PROP_FRAME_WIDTH : int
+            {static} + CAP_PROP_FRAME_HEIGHT : int
+            {static} + CAP_PROP_FPS : int
+            {static} + CAP_PROP_FOURCC : int
+            {static} + CAP_PROP_FRAME_COUNT : int
+            {static} + CAP_PROP_FORMAT : int
+            {static} + CAP_PROP_MODE : int
+            {static} + CAP_PROP_BRIGHTNESS : int
+            {static} + CAP_PROP_CONTRAST : int
+            {static} + CAP_PROP_SATURATION : int
+            {static} + CAP_PROP_HUE : int
+            {static} + CAP_PROP_GAIN : int
+            {static} + CAP_PROP_EXPOSURE : int
+            {static} + CAP_PROP_CONVERT_RGB : int
+            {static} + CAP_PROP_WHITE_BALANCE_BLUE_U : int
+            {static} + CAP_PROP_RECTIFICATION : int
+            {static} + CAP_PROP_MONOCHROME : int
+            {static} + CAP_PROP_SHARPNESS : int
+            {static} + CAP_PROP_AUTO_EXPOSURE : int
+            {static} + CAP_PROP_GAMMA : int
+            {static} + CAP_PROP_TEMPERATURE : int
+            {static} + CAP_PROP_TRIGGER : int
+            {static} + CAP_PROP_TRIGGER_DELAY : int
+            {static} + CAP_PROP_WHITE_BALANCE_RED_V : int
+            {static} + CAP_PROP_ZOOM : int
+            {static} + CAP_PROP_FOCUS : int
+            {static} + CAP_PROP_GUID : int
+            {static} + CAP_PROP_ISO_SPEED : int
+            {static} + CAP_PROP_BACKLIGHT : int
+            {static} + CAP_PROP_PAN : int
+            {static} + CAP_PROP_TILT : int
+            {static} + CAP_PROP_ROLL : int
+            {static} + CAP_PROP_IRIS : int
+            {static} + CAP_PROP_SETTINGS : int
+            {static} + CAP_PROP_BUFFERSIZE : int
+            {static} + CAP_PROP_AUTOFOCUS : int
+            {static} + CAP_PROP_SAR_NUM : int
+            {static} + CAP_PROP_SAR_DEN : int
+            {static} + CAP_MODE_BGR : int
+            {static} + CAP_MODE_RGB : int
+            {static} + CAP_MODE_GRAY : int
+            {static} + CAP_MODE_YUYV : int
+            {static} + VIDEOWRITER_PROP_QUALITY : int
+            {static} + VIDEOWRITER_PROP_FRAMEBYTES : int
+            {static} + VIDEOWRITER_PROP_NSTRIPES : int
+            {static} + CAP_PROP_DC1394_OFF : int
+            {static} + CAP_PROP_DC1394_MODE_MANUAL : int
+            {static} + CAP_PROP_DC1394_MODE_AUTO : int
+            {static} + CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO : int
+            {static} + CAP_PROP_DC1394_MAX : int
+            {static} + CAP_OPENNI_DEPTH_GENERATOR : int
+            {static} + CAP_OPENNI_IMAGE_GENERATOR : int
+            {static} + CAP_OPENNI_IR_GENERATOR : int
+            {static} + CAP_OPENNI_GENERATORS_MASK : int
+            {static} + CAP_PROP_OPENNI_OUTPUT_MODE : int
+            {static} + CAP_PROP_OPENNI_FRAME_MAX_DEPTH : int
+            {static} + CAP_PROP_OPENNI_BASELINE : int
+            {static} + CAP_PROP_OPENNI_FOCAL_LENGTH : int
+            {static} + CAP_PROP_OPENNI_REGISTRATION : int
+            {static} + CAP_PROP_OPENNI_REGISTRATION_ON : int
+            {static} + CAP_PROP_OPENNI_APPROX_FRAME_SYNC : int
+            {static} + CAP_PROP_OPENNI_MAX_BUFFER_SIZE : int
+            {static} + CAP_PROP_OPENNI_CIRCLE_BUFFER : int
+            {static} + CAP_PROP_OPENNI_MAX_TIME_DURATION : int
+            {static} + CAP_PROP_OPENNI_GENERATOR_PRESENT : int
+            {static} + CAP_PROP_OPENNI2_SYNC : int
+            {static} + CAP_PROP_OPENNI2_MIRROR : int
+            {static} + CAP_OPENNI_IMAGE_GENERATOR_PRESENT : int
+            {static} + CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE : int
+            {static} + CAP_OPENNI_DEPTH_GENERATOR_PRESENT : int
+            {static} + CAP_OPENNI_DEPTH_GENERATOR_BASELINE : int
+            {static} + CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH : int
+            {static} + CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION : int
+            {static} + CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON : int
+            {static} + CAP_OPENNI_IR_GENERATOR_PRESENT : int
+            {static} + CAP_OPENNI_DEPTH_MAP : int
+            {static} + CAP_OPENNI_POINT_CLOUD_MAP : int
+            {static} + CAP_OPENNI_DISPARITY_MAP : int
+            {static} + CAP_OPENNI_DISPARITY_MAP_32F : int
+            {static} + CAP_OPENNI_VALID_DEPTH_MASK : int
+            {static} + CAP_OPENNI_BGR_IMAGE : int
+            {static} + CAP_OPENNI_GRAY_IMAGE : int
+            {static} + CAP_OPENNI_IR_IMAGE : int
+            {static} + CAP_OPENNI_VGA_30HZ : int
+            {static} + CAP_OPENNI_SXGA_15HZ : int
+            {static} + CAP_OPENNI_SXGA_30HZ : int
+            {static} + CAP_OPENNI_QVGA_30HZ : int
+            {static} + CAP_OPENNI_QVGA_60HZ : int
+            {static} + CAP_PROP_GSTREAMER_QUEUE_LENGTH : int
+            {static} + CAP_PROP_PVAPI_MULTICASTIP : int
+            {static} + CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE : int
+            {static} + CAP_PROP_PVAPI_DECIMATIONHORIZONTAL : int
+            {static} + CAP_PROP_PVAPI_DECIMATIONVERTICAL : int
+            {static} + CAP_PROP_PVAPI_BINNINGX : int
+            {static} + CAP_PROP_PVAPI_BINNINGY : int
+            {static} + CAP_PROP_PVAPI_PIXELFORMAT : int
+            {static} + CAP_PVAPI_FSTRIGMODE_FREERUN : int
+            {static} + CAP_PVAPI_FSTRIGMODE_SYNCIN1 : int
+            {static} + CAP_PVAPI_FSTRIGMODE_SYNCIN2 : int
+            {static} + CAP_PVAPI_FSTRIGMODE_FIXEDRATE : int
+            {static} + CAP_PVAPI_FSTRIGMODE_SOFTWARE : int
+            {static} + CAP_PVAPI_DECIMATION_OFF : int
+            {static} + CAP_PVAPI_DECIMATION_2OUTOF4 : int
+            {static} + CAP_PVAPI_DECIMATION_2OUTOF8 : int
+            {static} + CAP_PVAPI_DECIMATION_2OUTOF16 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_MONO8 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_MONO16 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_BAYER8 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_BAYER16 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_RGB24 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_BGR24 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_RGBA32 : int
+            {static} + CAP_PVAPI_PIXELFORMAT_BGRA32 : int
+            {static} + CAP_PROP_XI_DOWNSAMPLING : int
+            {static} + CAP_PROP_XI_DATA_FORMAT : int
+            {static} + CAP_PROP_XI_OFFSET_X : int
+            {static} + CAP_PROP_XI_OFFSET_Y : int
+            {static} + CAP_PROP_XI_TRG_SOURCE : int
+            {static} + CAP_PROP_XI_TRG_SOFTWARE : int
+            {static} + CAP_PROP_XI_GPI_SELECTOR : int
+            {static} + CAP_PROP_XI_GPI_MODE : int
+            {static} + CAP_PROP_XI_GPI_LEVEL : int
+            {static} + CAP_PROP_XI_GPO_SELECTOR : int
+            {static} + CAP_PROP_XI_GPO_MODE : int
+            {static} + CAP_PROP_XI_LED_SELECTOR : int
+            {static} + CAP_PROP_XI_LED_MODE : int
+            {static} + CAP_PROP_XI_MANUAL_WB : int
+            {static} + CAP_PROP_XI_AUTO_WB : int
+            {static} + CAP_PROP_XI_AEAG : int
+            {static} + CAP_PROP_XI_EXP_PRIORITY : int
+            {static} + CAP_PROP_XI_AE_MAX_LIMIT : int
+            {static} + CAP_PROP_XI_AG_MAX_LIMIT : int
+            {static} + CAP_PROP_XI_AEAG_LEVEL : int
+            {static} + CAP_PROP_XI_TIMEOUT : int
+            {static} + CAP_PROP_XI_EXPOSURE : int
+            {static} + CAP_PROP_XI_EXPOSURE_BURST_COUNT : int
+            {static} + CAP_PROP_XI_GAIN_SELECTOR : int
+            {static} + CAP_PROP_XI_GAIN : int
+            {static} + CAP_PROP_XI_DOWNSAMPLING_TYPE : int
+            {static} + CAP_PROP_XI_BINNING_SELECTOR : int
+            {static} + CAP_PROP_XI_BINNING_VERTICAL : int
+            {static} + CAP_PROP_XI_BINNING_HORIZONTAL : int
+            {static} + CAP_PROP_XI_BINNING_PATTERN : int
+            {static} + CAP_PROP_XI_DECIMATION_SELECTOR : int
+            {static} + CAP_PROP_XI_DECIMATION_VERTICAL : int
+            {static} + CAP_PROP_XI_DECIMATION_HORIZONTAL : int
+            {static} + CAP_PROP_XI_DECIMATION_PATTERN : int
+            {static} + CAP_PROP_XI_TEST_PATTERN_GENERATOR_SELECTOR : int
+            {static} + CAP_PROP_XI_TEST_PATTERN : int
+            {static} + CAP_PROP_XI_IMAGE_DATA_FORMAT : int
+            {static} + CAP_PROP_XI_SHUTTER_TYPE : int
+            {static} + CAP_PROP_XI_SENSOR_TAPS : int
+            {static} + CAP_PROP_XI_AEAG_ROI_OFFSET_X : int
+            {static} + CAP_PROP_XI_AEAG_ROI_OFFSET_Y : int
+            {static} + CAP_PROP_XI_AEAG_ROI_WIDTH : int
+            {static} + CAP_PROP_XI_AEAG_ROI_HEIGHT : int
+            {static} + CAP_PROP_XI_BPC : int
+            {static} + CAP_PROP_XI_WB_KR : int
+            {static} + CAP_PROP_XI_WB_KG : int
+            {static} + CAP_PROP_XI_WB_KB : int
+            {static} + CAP_PROP_XI_WIDTH : int
+            {static} + CAP_PROP_XI_HEIGHT : int
+            {static} + CAP_PROP_XI_REGION_SELECTOR : int
+            {static} + CAP_PROP_XI_REGION_MODE : int
+            {static} + CAP_PROP_XI_LIMIT_BANDWIDTH : int
+            {static} + CAP_PROP_XI_SENSOR_DATA_BIT_DEPTH : int
+            {static} + CAP_PROP_XI_OUTPUT_DATA_BIT_DEPTH : int
+            {static} + CAP_PROP_XI_IMAGE_DATA_BIT_DEPTH : int
+            {static} + CAP_PROP_XI_OUTPUT_DATA_PACKING : int
+            {static} + CAP_PROP_XI_OUTPUT_DATA_PACKING_TYPE : int
+            {static} + CAP_PROP_XI_IS_COOLED : int
+            {static} + CAP_PROP_XI_COOLING : int
+            {static} + CAP_PROP_XI_TARGET_TEMP : int
+            {static} + CAP_PROP_XI_CHIP_TEMP : int
+            {static} + CAP_PROP_XI_HOUS_TEMP : int
+            {static} + CAP_PROP_XI_HOUS_BACK_SIDE_TEMP : int
+            {static} + CAP_PROP_XI_SENSOR_BOARD_TEMP : int
+            {static} + CAP_PROP_XI_CMS : int
+            {static} + CAP_PROP_XI_APPLY_CMS : int
+            {static} + CAP_PROP_XI_IMAGE_IS_COLOR : int
+            {static} + CAP_PROP_XI_COLOR_FILTER_ARRAY : int
+            {static} + CAP_PROP_XI_GAMMAY : int
+            {static} + CAP_PROP_XI_GAMMAC : int
+            {static} + CAP_PROP_XI_SHARPNESS : int
+            {static} + CAP_PROP_XI_CC_MATRIX_00 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_01 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_02 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_03 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_10 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_11 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_12 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_13 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_20 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_21 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_22 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_23 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_30 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_31 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_32 : int
+            {static} + CAP_PROP_XI_CC_MATRIX_33 : int
+            {static} + CAP_PROP_XI_DEFAULT_CC_MATRIX : int
+            {static} + CAP_PROP_XI_TRG_SELECTOR : int
+            {static} + CAP_PROP_XI_ACQ_FRAME_BURST_COUNT : int
+            {static} + CAP_PROP_XI_DEBOUNCE_EN : int
+            {static} + CAP_PROP_XI_DEBOUNCE_T0 : int
+            {static} + CAP_PROP_XI_DEBOUNCE_T1 : int
+            {static} + CAP_PROP_XI_DEBOUNCE_POL : int
+            {static} + CAP_PROP_XI_LENS_MODE : int
+            {static} + CAP_PROP_XI_LENS_APERTURE_VALUE : int
+            {static} + CAP_PROP_XI_LENS_FOCUS_MOVEMENT_VALUE : int
+            {static} + CAP_PROP_XI_LENS_FOCUS_MOVE : int
+            {static} + CAP_PROP_XI_LENS_FOCUS_DISTANCE : int
+            {static} + CAP_PROP_XI_LENS_FOCAL_LENGTH : int
+            {static} + CAP_PROP_XI_LENS_FEATURE_SELECTOR : int
+            {static} + CAP_PROP_XI_LENS_FEATURE : int
+            {static} + CAP_PROP_XI_DEVICE_MODEL_ID : int
+            {static} + CAP_PROP_XI_DEVICE_SN : int
+            {static} + CAP_PROP_XI_IMAGE_DATA_FORMAT_RGB32_ALPHA : int
+            {static} + CAP_PROP_XI_IMAGE_PAYLOAD_SIZE : int
+            {static} + CAP_PROP_XI_TRANSPORT_PIXEL_FORMAT : int
+            {static} + CAP_PROP_XI_SENSOR_CLOCK_FREQ_HZ : int
+            {static} + CAP_PROP_XI_SENSOR_CLOCK_FREQ_INDEX : int
+            {static} + CAP_PROP_XI_SENSOR_OUTPUT_CHANNEL_COUNT : int
+            {static} + CAP_PROP_XI_FRAMERATE : int
+            {static} + CAP_PROP_XI_COUNTER_SELECTOR : int
+            {static} + CAP_PROP_XI_COUNTER_VALUE : int
+            {static} + CAP_PROP_XI_ACQ_TIMING_MODE : int
+            {static} + CAP_PROP_XI_AVAILABLE_BANDWIDTH : int
+            {static} + CAP_PROP_XI_BUFFER_POLICY : int
+            {static} + CAP_PROP_XI_LUT_EN : int
+            {static} + CAP_PROP_XI_LUT_INDEX : int
+            {static} + CAP_PROP_XI_LUT_VALUE : int
+            {static} + CAP_PROP_XI_TRG_DELAY : int
+            {static} + CAP_PROP_XI_TS_RST_MODE : int
+            {static} + CAP_PROP_XI_TS_RST_SOURCE : int
+            {static} + CAP_PROP_XI_IS_DEVICE_EXIST : int
+            {static} + CAP_PROP_XI_ACQ_BUFFER_SIZE : int
+            {static} + CAP_PROP_XI_ACQ_BUFFER_SIZE_UNIT : int
+            {static} + CAP_PROP_XI_ACQ_TRANSPORT_BUFFER_SIZE : int
+            {static} + CAP_PROP_XI_BUFFERS_QUEUE_SIZE : int
+            {static} + CAP_PROP_XI_ACQ_TRANSPORT_BUFFER_COMMIT : int
+            {static} + CAP_PROP_XI_RECENT_FRAME : int
+            {static} + CAP_PROP_XI_DEVICE_RESET : int
+            {static} + CAP_PROP_XI_COLUMN_FPN_CORRECTION : int
+            {static} + CAP_PROP_XI_ROW_FPN_CORRECTION : int
+            {static} + CAP_PROP_XI_SENSOR_MODE : int
+            {static} + CAP_PROP_XI_HDR : int
+            {static} + CAP_PROP_XI_HDR_KNEEPOINT_COUNT : int
+            {static} + CAP_PROP_XI_HDR_T1 : int
+            {static} + CAP_PROP_XI_HDR_T2 : int
+            {static} + CAP_PROP_XI_KNEEPOINT1 : int
+            {static} + CAP_PROP_XI_KNEEPOINT2 : int
+            {static} + CAP_PROP_XI_IMAGE_BLACK_LEVEL : int
+            {static} + CAP_PROP_XI_HW_REVISION : int
+            {static} + CAP_PROP_XI_DEBUG_LEVEL : int
+            {static} + CAP_PROP_XI_AUTO_BANDWIDTH_CALCULATION : int
+            {static} + CAP_PROP_XI_FFS_FILE_ID : int
+            {static} + CAP_PROP_XI_FFS_FILE_SIZE : int
+            {static} + CAP_PROP_XI_FREE_FFS_SIZE : int
+            {static} + CAP_PROP_XI_USED_FFS_SIZE : int
+            {static} + CAP_PROP_XI_FFS_ACCESS_KEY : int
+            {static} + CAP_PROP_XI_SENSOR_FEATURE_SELECTOR : int
+            {static} + CAP_PROP_XI_SENSOR_FEATURE_VALUE : int
+            {static} + CAP_PROP_IOS_DEVICE_FOCUS : int
+            {static} + CAP_PROP_IOS_DEVICE_EXPOSURE : int
+            {static} + CAP_PROP_IOS_DEVICE_FLASH : int
+            {static} + CAP_PROP_IOS_DEVICE_WHITEBALANCE : int
+            {static} + CAP_PROP_IOS_DEVICE_TORCH : int
+            {static} + CAP_PROP_GIGA_FRAME_OFFSET_X : int
+            {static} + CAP_PROP_GIGA_FRAME_OFFSET_Y : int
+            {static} + CAP_PROP_GIGA_FRAME_WIDTH_MAX : int
+            {static} + CAP_PROP_GIGA_FRAME_HEIGH_MAX : int
+            {static} + CAP_PROP_GIGA_FRAME_SENS_WIDTH : int
+            {static} + CAP_PROP_GIGA_FRAME_SENS_HEIGH : int
+            {static} + CAP_PROP_INTELPERC_PROFILE_COUNT : int
+            {static} + CAP_PROP_INTELPERC_PROFILE_IDX : int
+            {static} + CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE : int
+            {static} + CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE : int
+            {static} + CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD : int
+            {static} + CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ : int
+            {static} + CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT : int
+            {static} + CAP_INTELPERC_DEPTH_GENERATOR : int
+            {static} + CAP_INTELPERC_IMAGE_GENERATOR : int
+            {static} + CAP_INTELPERC_GENERATORS_MASK : int
+            {static} + CAP_INTELPERC_DEPTH_MAP : int
+            {static} + CAP_INTELPERC_UVDEPTH_MAP : int
+            {static} + CAP_INTELPERC_IR_MAP : int
+            {static} + CAP_INTELPERC_IMAGE : int
+            {static} + CAP_PROP_GPHOTO2_PREVIEW : int
+            {static} + CAP_PROP_GPHOTO2_WIDGET_ENUMERATE : int
+            {static} + CAP_PROP_GPHOTO2_RELOAD_CONFIG : int
+            {static} + CAP_PROP_GPHOTO2_RELOAD_ON_CHANGE : int
+            {static} + CAP_PROP_GPHOTO2_COLLECT_MSGS : int
+            {static} + CAP_PROP_GPHOTO2_FLUSH_MSGS : int
+            {static} + CAP_PROP_SPEED : int
+            {static} + CAP_PROP_APERTURE : int
+            {static} + CAP_PROP_EXPOSUREPROGRAM : int
+            {static} + CAP_PROP_VIEWFINDER : int
+            {static} + CAP_PROP_IMAGES_BASE : int
+            {static} + CAP_PROP_IMAGES_LAST : int
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

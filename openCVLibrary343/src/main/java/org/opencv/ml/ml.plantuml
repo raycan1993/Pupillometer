@@ -1,0 +1,824 @@
+@startuml
+
+title __ML's Class Diagram__\n
+
+  package org.opencv {
+    package org.opencv.ml {
+      class ANN_MLP {
+          {static} + BACKPROP : int
+          {static} + RPROP : int
+          {static} + ANNEAL : int
+          {static} + IDENTITY : int
+          {static} + SIGMOID_SYM : int
+          {static} + GAUSSIAN : int
+          {static} + RELU : int
+          {static} + LEAKYRELU : int
+          {static} + UPDATE_WEIGHTS : int
+          {static} + NO_INPUT_SCALE : int
+          {static} + NO_OUTPUT_SCALE : int
+          # ANN_MLP()
+          {static} + __fromPtr__()
+          + getLayerSizes()
+          + getWeights()
+          {static} + create()
+          {static} + load()
+          + getTermCriteria()
+          + getAnnealCoolingRatio()
+          + getAnnealFinalT()
+          + getAnnealInitialT()
+          + getBackpropMomentumScale()
+          + getBackpropWeightScale()
+          + getRpropDW0()
+          + getRpropDWMax()
+          + getRpropDWMin()
+          + getRpropDWMinus()
+          + getRpropDWPlus()
+          + getAnnealItePerStep()
+          + getTrainMethod()
+          + setActivationFunction()
+          + setActivationFunction()
+          + setActivationFunction()
+          + setAnnealCoolingRatio()
+          + setAnnealFinalT()
+          + setAnnealInitialT()
+          + setAnnealItePerStep()
+          + setBackpropMomentumScale()
+          + setBackpropWeightScale()
+          + setLayerSizes()
+          + setRpropDW0()
+          + setRpropDWMax()
+          + setRpropDWMin()
+          + setRpropDWMinus()
+          + setRpropDWPlus()
+          + setTermCriteria()
+          + setTrainMethod()
+          + setTrainMethod()
+          + setTrainMethod()
+          # finalize()
+          {static} - getLayerSizes_0()
+          {static} - getWeights_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - getTermCriteria_0()
+          {static} - getAnnealCoolingRatio_0()
+          {static} - getAnnealFinalT_0()
+          {static} - getAnnealInitialT_0()
+          {static} - getBackpropMomentumScale_0()
+          {static} - getBackpropWeightScale_0()
+          {static} - getRpropDW0_0()
+          {static} - getRpropDWMax_0()
+          {static} - getRpropDWMin_0()
+          {static} - getRpropDWMinus_0()
+          {static} - getRpropDWPlus_0()
+          {static} - getAnnealItePerStep_0()
+          {static} - getTrainMethod_0()
+          {static} - setActivationFunction_0()
+          {static} - setActivationFunction_1()
+          {static} - setActivationFunction_2()
+          {static} - setAnnealCoolingRatio_0()
+          {static} - setAnnealFinalT_0()
+          {static} - setAnnealInitialT_0()
+          {static} - setAnnealItePerStep_0()
+          {static} - setBackpropMomentumScale_0()
+          {static} - setBackpropWeightScale_0()
+          {static} - setLayerSizes_0()
+          {static} - setRpropDW0_0()
+          {static} - setRpropDWMax_0()
+          {static} - setRpropDWMin_0()
+          {static} - setRpropDWMinus_0()
+          {static} - setRpropDWPlus_0()
+          {static} - setTermCriteria_0()
+          {static} - setTrainMethod_0()
+          {static} - setTrainMethod_1()
+          {static} - setTrainMethod_2()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class ANN_MLP_ANNEAL {
+          # ANN_MLP_ANNEAL()
+          {static} + __fromPtr__()
+          + getAnnealCoolingRatio()
+          + getAnnealFinalT()
+          + getAnnealInitialT()
+          + getAnnealItePerStep()
+          + setAnnealCoolingRatio()
+          + setAnnealFinalT()
+          + setAnnealInitialT()
+          + setAnnealItePerStep()
+          # finalize()
+          {static} - getAnnealCoolingRatio_0()
+          {static} - getAnnealFinalT_0()
+          {static} - getAnnealInitialT_0()
+          {static} - getAnnealItePerStep_0()
+          {static} - setAnnealCoolingRatio_0()
+          {static} - setAnnealFinalT_0()
+          {static} - setAnnealInitialT_0()
+          {static} - setAnnealItePerStep_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class Boost {
+          {static} + DISCRETE : int
+          {static} + REAL : int
+          {static} + LOGIT : int
+          {static} + GENTLE : int
+          # Boost()
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + getWeightTrimRate()
+          + getBoostType()
+          + getWeakCount()
+          + setBoostType()
+          + setWeakCount()
+          + setWeightTrimRate()
+          # finalize()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - getWeightTrimRate_0()
+          {static} - getBoostType_0()
+          {static} - getWeakCount_0()
+          {static} - setBoostType_0()
+          {static} - setWeakCount_0()
+          {static} - setWeightTrimRate_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class DTrees {
+          {static} + PREDICT_AUTO : int
+          {static} + PREDICT_SUM : int
+          {static} + PREDICT_MAX_VOTE : int
+          {static} + PREDICT_MASK : int
+          # DTrees()
+          {static} + __fromPtr__()
+          + getPriors()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + getTruncatePrunedTree()
+          + getUse1SERule()
+          + getUseSurrogates()
+          + getRegressionAccuracy()
+          + getCVFolds()
+          + getMaxCategories()
+          + getMaxDepth()
+          + getMinSampleCount()
+          + setCVFolds()
+          + setMaxCategories()
+          + setMaxDepth()
+          + setMinSampleCount()
+          + setPriors()
+          + setRegressionAccuracy()
+          + setTruncatePrunedTree()
+          + setUse1SERule()
+          + setUseSurrogates()
+          # finalize()
+          {static} - getPriors_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - getTruncatePrunedTree_0()
+          {static} - getUse1SERule_0()
+          {static} - getUseSurrogates_0()
+          {static} - getRegressionAccuracy_0()
+          {static} - getCVFolds_0()
+          {static} - getMaxCategories_0()
+          {static} - getMaxDepth_0()
+          {static} - getMinSampleCount_0()
+          {static} - setCVFolds_0()
+          {static} - setMaxCategories_0()
+          {static} - setMaxDepth_0()
+          {static} - setMinSampleCount_0()
+          {static} - setPriors_0()
+          {static} - setRegressionAccuracy_0()
+          {static} - setTruncatePrunedTree_0()
+          {static} - setUse1SERule_0()
+          {static} - setUseSurrogates_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class EM {
+          {static} + COV_MAT_SPHERICAL : int
+          {static} + COV_MAT_DIAGONAL : int
+          {static} + COV_MAT_GENERIC : int
+          {static} + COV_MAT_DEFAULT : int
+          {static} + DEFAULT_NCLUSTERS : int
+          {static} + DEFAULT_MAX_ITERS : int
+          {static} + START_E_STEP : int
+          {static} + START_M_STEP : int
+          {static} + START_AUTO_STEP : int
+          # EM()
+          {static} + __fromPtr__()
+          + getMeans()
+          + getWeights()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + getTermCriteria()
+          + predict2()
+          + trainE()
+          + trainE()
+          + trainE()
+          + trainE()
+          + trainE()
+          + trainE()
+          + trainEM()
+          + trainEM()
+          + trainEM()
+          + trainEM()
+          + trainM()
+          + trainM()
+          + trainM()
+          + trainM()
+          + predict()
+          + predict()
+          + predict()
+          + getClustersNumber()
+          + getCovarianceMatrixType()
+          + getCovs()
+          + setClustersNumber()
+          + setCovarianceMatrixType()
+          + setTermCriteria()
+          # finalize()
+          {static} - getMeans_0()
+          {static} - getWeights_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - getTermCriteria_0()
+          {static} - predict2_0()
+          {static} - trainE_0()
+          {static} - trainE_1()
+          {static} - trainE_2()
+          {static} - trainE_3()
+          {static} - trainE_4()
+          {static} - trainE_5()
+          {static} - trainEM_0()
+          {static} - trainEM_1()
+          {static} - trainEM_2()
+          {static} - trainEM_3()
+          {static} - trainM_0()
+          {static} - trainM_1()
+          {static} - trainM_2()
+          {static} - trainM_3()
+          {static} - predict_0()
+          {static} - predict_1()
+          {static} - predict_2()
+          {static} - getClustersNumber_0()
+          {static} - getCovarianceMatrixType_0()
+          {static} - getCovs_0()
+          {static} - setClustersNumber_0()
+          {static} - setCovarianceMatrixType_0()
+          {static} - setTermCriteria_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class KNearest {
+          {static} + BRUTE_FORCE : int
+          {static} + KDTREE : int
+          # KNearest()
+          {static} + __fromPtr__()
+          {static} + create()
+          + getIsClassifier()
+          + findNearest()
+          + findNearest()
+          + findNearest()
+          + getAlgorithmType()
+          + getDefaultK()
+          + getEmax()
+          + setAlgorithmType()
+          + setDefaultK()
+          + setEmax()
+          + setIsClassifier()
+          # finalize()
+          {static} - create_0()
+          {static} - getIsClassifier_0()
+          {static} - findNearest_0()
+          {static} - findNearest_1()
+          {static} - findNearest_2()
+          {static} - getAlgorithmType_0()
+          {static} - getDefaultK_0()
+          {static} - getEmax_0()
+          {static} - setAlgorithmType_0()
+          {static} - setDefaultK_0()
+          {static} - setEmax_0()
+          {static} - setIsClassifier_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class LogisticRegression {
+          {static} + REG_DISABLE : int
+          {static} + REG_L1 : int
+          {static} + REG_L2 : int
+          {static} + BATCH : int
+          {static} + MINI_BATCH : int
+          # LogisticRegression()
+          {static} + __fromPtr__()
+          + get_learnt_thetas()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + getTermCriteria()
+          + getLearningRate()
+          + predict()
+          + predict()
+          + predict()
+          + getIterations()
+          + getMiniBatchSize()
+          + getRegularization()
+          + getTrainMethod()
+          + setIterations()
+          + setLearningRate()
+          + setMiniBatchSize()
+          + setRegularization()
+          + setTermCriteria()
+          + setTrainMethod()
+          # finalize()
+          {static} - get_learnt_thetas_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - getTermCriteria_0()
+          {static} - getLearningRate_0()
+          {static} - predict_0()
+          {static} - predict_1()
+          {static} - predict_2()
+          {static} - getIterations_0()
+          {static} - getMiniBatchSize_0()
+          {static} - getRegularization_0()
+          {static} - getTrainMethod_0()
+          {static} - setIterations_0()
+          {static} - setLearningRate_0()
+          {static} - setMiniBatchSize_0()
+          {static} - setRegularization_0()
+          {static} - setTermCriteria_0()
+          {static} - setTrainMethod_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class Ml {
+          {static} + VAR_NUMERICAL : int
+          {static} + VAR_ORDERED : int
+          {static} + VAR_CATEGORICAL : int
+          {static} + TEST_ERROR : int
+          {static} + TRAIN_ERROR : int
+          {static} + ROW_SAMPLE : int
+          {static} + COL_SAMPLE : int
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class NormalBayesClassifier {
+          # NormalBayesClassifier()
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + predictProb()
+          + predictProb()
+          # finalize()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - predictProb_0()
+          {static} - predictProb_1()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class ParamGrid {
+          # nativeObj : long
+          # ParamGrid()
+          + getNativeObjAddr()
+          {static} + __fromPtr__()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          + get_minVal()
+          + set_minVal()
+          + get_maxVal()
+          + set_maxVal()
+          + get_logStep()
+          + set_logStep()
+          # finalize()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - create_2()
+          {static} - create_3()
+          {static} - get_minVal_0()
+          {static} - set_minVal_0()
+          {static} - get_maxVal_0()
+          {static} - set_maxVal_0()
+          {static} - get_logStep_0()
+          {static} - set_logStep_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class RTrees {
+          # RTrees()
+          {static} + __fromPtr__()
+          + getVarImportance()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + getTermCriteria()
+          + getCalculateVarImportance()
+          + getActiveVarCount()
+          + getVotes()
+          + setActiveVarCount()
+          + setCalculateVarImportance()
+          + setTermCriteria()
+          # finalize()
+          {static} - getVarImportance_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - getTermCriteria_0()
+          {static} - getCalculateVarImportance_0()
+          {static} - getActiveVarCount_0()
+          {static} - getVotes_0()
+          {static} - setActiveVarCount_0()
+          {static} - setCalculateVarImportance_0()
+          {static} - setTermCriteria_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class SVM {
+          {static} + C_SVC : int
+          {static} + NU_SVC : int
+          {static} + ONE_CLASS : int
+          {static} + EPS_SVR : int
+          {static} + NU_SVR : int
+          {static} + CUSTOM : int
+          {static} + LINEAR : int
+          {static} + POLY : int
+          {static} + RBF : int
+          {static} + SIGMOID : int
+          {static} + CHI2 : int
+          {static} + INTER : int
+          {static} + C : int
+          {static} + GAMMA : int
+          {static} + P : int
+          {static} + NU : int
+          {static} + COEF : int
+          {static} + DEGREE : int
+          # SVM()
+          {static} + __fromPtr__()
+          + getClassWeights()
+          + getSupportVectors()
+          + getUncompressedSupportVectors()
+          {static} + getDefaultGridPtr()
+          {static} + create()
+          {static} + load()
+          + getTermCriteria()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + trainAuto()
+          + getC()
+          + getCoef0()
+          + getDecisionFunction()
+          + getDegree()
+          + getGamma()
+          + getNu()
+          + getP()
+          + getKernelType()
+          + getType()
+          + setC()
+          + setClassWeights()
+          + setCoef0()
+          + setDegree()
+          + setGamma()
+          + setKernel()
+          + setNu()
+          + setP()
+          + setTermCriteria()
+          + setType()
+          # finalize()
+          {static} - getClassWeights_0()
+          {static} - getSupportVectors_0()
+          {static} - getUncompressedSupportVectors_0()
+          {static} - getDefaultGridPtr_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - getTermCriteria_0()
+          {static} - trainAuto_0()
+          {static} - trainAuto_1()
+          {static} - trainAuto_2()
+          {static} - trainAuto_3()
+          {static} - trainAuto_4()
+          {static} - trainAuto_5()
+          {static} - trainAuto_6()
+          {static} - trainAuto_7()
+          {static} - trainAuto_8()
+          {static} - getC_0()
+          {static} - getCoef0_0()
+          {static} - getDecisionFunction_0()
+          {static} - getDegree_0()
+          {static} - getGamma_0()
+          {static} - getNu_0()
+          {static} - getP_0()
+          {static} - getKernelType_0()
+          {static} - getType_0()
+          {static} - setC_0()
+          {static} - setClassWeights_0()
+          {static} - setCoef0_0()
+          {static} - setDegree_0()
+          {static} - setGamma_0()
+          {static} - setKernel_0()
+          {static} - setNu_0()
+          {static} - setP_0()
+          {static} - setTermCriteria_0()
+          {static} - setType_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class SVMSGD {
+          {static} + SGD : int
+          {static} + ASGD : int
+          {static} + SOFT_MARGIN : int
+          {static} + HARD_MARGIN : int
+          # SVMSGD()
+          {static} + __fromPtr__()
+          + getWeights()
+          {static} + create()
+          {static} + load()
+          {static} + load()
+          + getTermCriteria()
+          + getInitialStepSize()
+          + getMarginRegularization()
+          + getShift()
+          + getStepDecreasingPower()
+          + getMarginType()
+          + getSvmsgdType()
+          + setInitialStepSize()
+          + setMarginRegularization()
+          + setMarginType()
+          + setOptimalParameters()
+          + setOptimalParameters()
+          + setOptimalParameters()
+          + setStepDecreasingPower()
+          + setSvmsgdType()
+          + setTermCriteria()
+          # finalize()
+          {static} - getWeights_0()
+          {static} - create_0()
+          {static} - load_0()
+          {static} - load_1()
+          {static} - getTermCriteria_0()
+          {static} - getInitialStepSize_0()
+          {static} - getMarginRegularization_0()
+          {static} - getShift_0()
+          {static} - getStepDecreasingPower_0()
+          {static} - getMarginType_0()
+          {static} - getSvmsgdType_0()
+          {static} - setInitialStepSize_0()
+          {static} - setMarginRegularization_0()
+          {static} - setMarginType_0()
+          {static} - setOptimalParameters_0()
+          {static} - setOptimalParameters_1()
+          {static} - setOptimalParameters_2()
+          {static} - setStepDecreasingPower_0()
+          {static} - setSvmsgdType_0()
+          {static} - setTermCriteria_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class StatModel {
+          {static} + UPDATE_MODEL : int
+          {static} + RAW_OUTPUT : int
+          {static} + COMPRESSED_INPUT : int
+          {static} + PREPROCESSED_INPUT : int
+          # StatModel()
+          {static} + __fromPtr__()
+          + empty()
+          + isClassifier()
+          + isTrained()
+          + train()
+          + train()
+          + train()
+          + calcError()
+          + predict()
+          + predict()
+          + predict()
+          + getVarCount()
+          # finalize()
+          {static} - empty_0()
+          {static} - isClassifier_0()
+          {static} - isTrained_0()
+          {static} - train_0()
+          {static} - train_1()
+          {static} - train_2()
+          {static} - calcError_0()
+          {static} - predict_0()
+          {static} - predict_1()
+          {static} - predict_2()
+          {static} - getVarCount_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  package org.opencv {
+    package org.opencv.ml {
+      class TrainData {
+          # nativeObj : long
+          # TrainData()
+          + getNativeObjAddr()
+          {static} + __fromPtr__()
+          + getCatMap()
+          + getCatOfs()
+          + getClassLabels()
+          + getDefaultSubstValues()
+          + getMissing()
+          + getNormCatResponses()
+          + getResponses()
+          + getSampleWeights()
+          + getSamples()
+          {static} + getSubMatrix()
+          {static} + getSubVector()
+          + getTestNormCatResponses()
+          + getTestResponses()
+          + getTestSampleIdx()
+          + getTestSampleWeights()
+          + getTestSamples()
+          + getTrainNormCatResponses()
+          + getTrainResponses()
+          + getTrainSampleIdx()
+          + getTrainSampleWeights()
+          + getTrainSamples()
+          + getTrainSamples()
+          + getTrainSamples()
+          + getTrainSamples()
+          + getVarIdx()
+          + getVarSymbolFlags()
+          + getVarType()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          {static} + create()
+          + getCatCount()
+          + getLayout()
+          + getNAllVars()
+          + getNSamples()
+          + getNTestSamples()
+          + getNTrainSamples()
+          + getNVars()
+          + getResponseType()
+          + getNames()
+          + getSample()
+          + getValues()
+          + setTrainTestSplit()
+          + setTrainTestSplit()
+          + setTrainTestSplitRatio()
+          + setTrainTestSplitRatio()
+          + shuffleTrainTest()
+          # finalize()
+          {static} - getCatMap_0()
+          {static} - getCatOfs_0()
+          {static} - getClassLabels_0()
+          {static} - getDefaultSubstValues_0()
+          {static} - getMissing_0()
+          {static} - getNormCatResponses_0()
+          {static} - getResponses_0()
+          {static} - getSampleWeights_0()
+          {static} - getSamples_0()
+          {static} - getSubMatrix_0()
+          {static} - getSubVector_0()
+          {static} - getTestNormCatResponses_0()
+          {static} - getTestResponses_0()
+          {static} - getTestSampleIdx_0()
+          {static} - getTestSampleWeights_0()
+          {static} - getTestSamples_0()
+          {static} - getTrainNormCatResponses_0()
+          {static} - getTrainResponses_0()
+          {static} - getTrainSampleIdx_0()
+          {static} - getTrainSampleWeights_0()
+          {static} - getTrainSamples_0()
+          {static} - getTrainSamples_1()
+          {static} - getTrainSamples_2()
+          {static} - getTrainSamples_3()
+          {static} - getVarIdx_0()
+          {static} - getVarSymbolFlags_0()
+          {static} - getVarType_0()
+          {static} - create_0()
+          {static} - create_1()
+          {static} - create_2()
+          {static} - create_3()
+          {static} - create_4()
+          {static} - getCatCount_0()
+          {static} - getLayout_0()
+          {static} - getNAllVars_0()
+          {static} - getNSamples_0()
+          {static} - getNTestSamples_0()
+          {static} - getNTrainSamples_0()
+          {static} - getNVars_0()
+          {static} - getResponseType_0()
+          {static} - getNames_0()
+          {static} - getSample_0()
+          {static} - getValues_0()
+          {static} - setTrainTestSplit_0()
+          {static} - setTrainTestSplit_1()
+          {static} - setTrainTestSplitRatio_0()
+          {static} - setTrainTestSplitRatio_1()
+          {static} - shuffleTrainTest_0()
+          {static} - delete()
+      }
+    }
+  }
+  
+
+  ANN_MLP -up-|> StatModel
+  ANN_MLP_ANNEAL -up-|> ANN_MLP
+  Boost -up-|> DTrees
+  DTrees -up-|> StatModel
+  EM -up-|> StatModel
+  KNearest -up-|> StatModel
+  LogisticRegression -up-|> StatModel
+  NormalBayesClassifier -up-|> StatModel
+  RTrees -up-|> DTrees
+  SVM -up-|> StatModel
+  SVMSGD -up-|> StatModel
+  StatModel -up-|> Algorithm
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

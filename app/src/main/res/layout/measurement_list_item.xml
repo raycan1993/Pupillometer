@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="01.01.1970 00:00" />
+
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_lightitalic"
+            android:text="0_2_PROCESSED.jpg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBtn"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/pupil1_title"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="L" />
+
+                <TextView
+                    android:id="@+id/pupil2_title"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="R" />
+
+                <TextView
+                    android:id="@+id/difference_title"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Diff." />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/pupil1"
+                    android:layout_width="90dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="0.000mm"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/pupil2"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="0.000mm" />
+
+                <TextView
+                    android:id="@+id/difference"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="0.000mm" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
