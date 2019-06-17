@@ -1,0 +1,2 @@
+# Pupillometer
+Die vorliegende Bachelor-Thesis befasst sich mit einer der markantesten Symptome von Cluster-Headache, der Pupillenverengung oder Miosis. In dieser Arbeit wurde eine prototypische Smartphone-Applikation für Android-Geräte konzipiert und entwickelt, welche die Pupillengrösse beider Augen erfasst und miteinander vergleicht. Für diesen Zweck wurden verwandte Systeme, Applikationen und Arbeiten sowie Bildverarbeitungsalgorithmen untersucht. Ein konzipiertes Messverfahren wurde mit Hilfe der Programmierbibliothek «OpenCV» umgesetzt. 
