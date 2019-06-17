@@ -16,7 +16,7 @@ Die vorliegende Bachelor-Thesis befasst sich mit einer der markantesten Symptome
 </p>
 <p>
   <b>Detailansicht: </b>Sobald der Nutzer auf einer Messung aus der ListView klickt, erscheint die Detailansicht mit den
-  entsprechenden Informationen der Messung
+  entsprechenden Informationen der Messung.
 </p>
 <img src="https://github.com/raycan1993/Pupillometer/blob/master/Screenshots/2.png" alt="Detail- und Ergebnisansicht" width="500"/>
 
