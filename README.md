@@ -8,7 +8,9 @@ Die vorliegende Bachelor-Thesis befasst sich mit einer der markantesten Symptome
 <p>
   <b>Anleitung: </b> Die korrekte Nutzung der Applikation wird hier in vier Schritten kurz erklärt.
 </p>
+<p class="center">
 <img src="https://github.com/raycan1993/Pupillometer/blob/master/Screenshots/1.png" alt="Hauptansicht und Anleitung" width="500"/>
+</p>
 
 ### Ergebnis- und Detailansicht 
 <p>
@@ -18,5 +20,6 @@ Die vorliegende Bachelor-Thesis befasst sich mit einer der markantesten Symptome
   <b>Detailansicht: </b>Sobald der Nutzer auf einer Messung aus der ListView klickt, erscheint die Detailansicht mit den
   entsprechenden Informationen der Messung.
 </p>
+<p class="center">
 <img src="https://github.com/raycan1993/Pupillometer/blob/master/Screenshots/2.png" alt="Detail- und Ergebnisansicht" width="500"/>
-
+</p>
